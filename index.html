@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Decoraciones Gaby – Cortinas, Tapicería, Papel y Alfombras</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Decoraciones Gaby – Cortinas, Tapicería, Papel y Alfombras</title>
+  <meta name="description" content="Decoraciones Gaby en Lanús Este. Cortinería, tapicería, papel tapiz, alfombras y ropa de cama. Más de 30 años de experiencia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
   :root {
     --burgundy: #7B1F3A;
     --burgundy-light: #A63254;
@@ -20,1256 +23,407 @@
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
   html { scroll-behavior: smooth; }
+  body { font-family: 'Montserrat', sans-serif; background: var(--warm-white); color: var(--text); overflow-x: hidden; }
 
-  body {
-    font-family: 'Montserrat', sans-serif;
-    background: var(--warm-white);
-    color: var(--text);
-    overflow-x: hidden;
-  }
-
-  /* ── WHATSAPP TOP BAR ── */
   .wa-topbar {
-    background: var(--burgundy);
-    color: white;
-    text-align: center;
-    padding: 10px 20px;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    flex-wrap: wrap;
+    background: var(--burgundy); color: white; text-align: center;
+    padding: 10px 20px; font-size: 13px; font-weight: 500; letter-spacing: 0.05em;
+    display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap;
   }
-  .wa-topbar a {
-    color: var(--gold-light);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-weight: 600;
-    transition: color 0.2s;
-  }
+  .wa-topbar a { color: var(--gold-light); text-decoration: none; display: flex; align-items: center; gap: 6px; font-weight: 600; transition: color 0.2s; }
   .wa-topbar a:hover { color: white; }
-  .wa-icon { width: 18px; height: 18px; fill: currentColor; }
 
-  /* ── NAVBAR ── */
   nav {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: var(--warm-white);
-    border-bottom: 2px solid var(--gold-light);
-    padding: 0 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 72px;
-    box-shadow: 0 2px 20px rgba(123,31,58,0.08);
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,253,249,0.97); backdrop-filter: blur(10px);
+    padding: 0 80px; display: flex; align-items: center; justify-content: space-between;
+    height: 72px; box-shadow: 0 2px 20px rgba(123,31,58,0.08);
   }
-
-  .nav-logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-decoration: none;
-  }
-  .nav-logo-icon {
-    width: 44px;
-    height: 44px;
-  }
-  .nav-logo-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-  }
-  .nav-logo-text span:first-child {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 11px;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--text-light);
-    font-weight: 400;
-  }
-  .nav-logo-text span:last-child {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    color: var(--burgundy);
-    font-weight: 700;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 32px;
-    list-style: none;
-    align-items: center;
-  }
-  .nav-links a {
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--text);
-    position: relative;
-    transition: color 0.2s;
-  }
-  .nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0; right: 0;
-    height: 1.5px;
-    background: var(--burgundy);
-    transform: scaleX(0);
-    transition: transform 0.3s;
-  }
+  .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+  .nav-logo-icon { width: 44px; height: 44px; border: 2px solid var(--burgundy); display: flex; align-items: center; justify-content: center; font-size: 16px; }
+  .nav-logo-text { line-height: 1.1; }
+  .nav-logo-text span:first-child { display: block; font-size: 9px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: var(--text-light); }
+  .nav-logo-text span:last-child { display: block; font-family: 'Playfair Display', serif; font-size: 22px; color: var(--burgundy); font-weight: 700; }
+  .nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+  .nav-links a { text-decoration: none; color: var(--text); font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; transition: color 0.2s; }
   .nav-links a:hover { color: var(--burgundy); }
-  .nav-links a:hover::after { transform: scaleX(1); }
-
-  .btn-wa-nav {
-    background: #25D366;
-    color: white !important;
-    padding: 10px 20px;
-    border-radius: 25px;
-    display: flex !important;
-    align-items: center;
-    gap: 7px;
-    font-size: 12px !important;
-    font-weight: 600 !important;
-    letter-spacing: 0.05em !important;
-    transition: transform 0.2s, box-shadow 0.2s !important;
-    box-shadow: 0 3px 12px rgba(37,211,102,0.3);
+  .nav-cta {
+    background: #25D366 !important; color: white !important; padding: 11px 22px;
+    display: flex !important; align-items: center; gap: 8px; border-radius: 4px;
+    font-size: 11px !important; font-weight: 600 !important; letter-spacing: 0.1em !important;
+    transition: background 0.2s !important;
   }
-  .btn-wa-nav::after { display: none !important; }
-  .btn-wa-nav:hover {
-    transform: translateY(-2px) !important;
-    box-shadow: 0 6px 20px rgba(37,211,102,0.4) !important;
-  }
+  .nav-cta:hover { background: #20b858 !important; color: white !important; }
+  .hamburger { display: none; background: none; border: none; font-size: 24px; cursor: pointer; color: var(--burgundy); }
 
-  /* ── HERO ── */
-  .hero {
-    min-height: 92vh;
-    background: var(--cream);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
-    overflow: hidden;
-  }
-
+  /* HERO */
+  .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: calc(100vh - 72px); overflow: hidden; }
   .hero-left {
-    padding: 80px 60px 80px 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
+    padding: 80px; display: flex; flex-direction: column; justify-content: center;
+    background: var(--warm-white); position: relative;
   }
+  .hero-left::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(to right, var(--burgundy), var(--gold)); }
+  .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--burgundy); color: white; padding: 8px 18px; font-size: 10px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 32px; width: fit-content; border-radius: 2px; }
+  .hero-title { font-family: 'Montserrat', sans-serif; font-size: clamp(2.8rem, 4.5vw, 4.2rem); font-weight: 800; line-height: 1.05; color: var(--dark); margin-bottom: 8px; }
+  .hero-title-italic { font-family: 'Cormorant Garamond', serif; font-size: clamp(3rem, 5vw, 4.8rem); font-style: italic; font-weight: 600; color: var(--burgundy); display: block; line-height: 1; margin-bottom: 16px; }
+  .hero-divider { width: 60px; height: 2px; background: var(--gold); margin-bottom: 20px; }
+  .hero-subtitle { font-size: 13px; font-weight: 500; letter-spacing: 0.15em; color: var(--text-light); margin-bottom: 24px; text-transform: uppercase; }
+  .hero-desc { font-size: 15px; color: var(--text-light); line-height: 1.8; max-width: 420px; margin-bottom: 44px; font-weight: 300; }
+  .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+  .btn-primary { background: var(--dark); color: white; padding: 16px 32px; text-decoration: none; font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; border-radius: 3px; transition: background 0.2s; }
+  .btn-primary:hover { background: var(--burgundy); }
+  .btn-wa-hero { background: #25D366; color: white; padding: 16px 28px; text-decoration: none; font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; border-radius: 3px; display: flex; align-items: center; gap: 8px; transition: background 0.2s; }
+  .btn-wa-hero:hover { background: #20b858; }
 
-  .hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--burgundy);
-    color: var(--gold-light);
-    font-size: 10px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    padding: 8px 18px;
-    border-radius: 30px;
-    margin-bottom: 32px;
-    width: fit-content;
-    font-weight: 600;
-  }
-
-  .hero-title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(42px, 5vw, 72px);
-    line-height: 1.08;
-    color: var(--dark);
-    margin-bottom: 12px;
-  }
-  .hero-title em {
-    font-style: italic;
-    color: var(--burgundy);
-  }
-
-  .hero-subtitle {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
-    color: var(--text-light);
-    margin-bottom: 28px;
-    font-weight: 400;
-    line-height: 1.5;
-  }
-
-  .hero-divider {
-    width: 60px;
-    height: 2px;
-    background: linear-gradient(to right, var(--gold), transparent);
-    margin-bottom: 28px;
-  }
-
-  .hero-desc {
-    font-size: 14px;
-    line-height: 1.8;
-    color: var(--text-light);
-    max-width: 420px;
-    margin-bottom: 44px;
-  }
-
-  .hero-btns {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-  }
-
-  .btn-primary {
-    background: var(--burgundy);
-    color: white;
-    padding: 16px 36px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all 0.3s;
-    position: relative;
-    overflow: hidden;
-  }
-  .btn-primary::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: var(--burgundy-light);
-    transform: translateX(-100%);
-    transition: transform 0.3s;
-  }
-  .btn-primary span { position: relative; z-index: 1; }
-  .btn-primary:hover::before { transform: translateX(0); }
-  .btn-primary:hover { box-shadow: 0 8px 30px rgba(123,31,58,0.35); transform: translateY(-2px); }
-
-  .btn-wa {
-    background: #25D366;
-    color: white;
-    padding: 16px 32px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 9px;
-    transition: all 0.3s;
-    box-shadow: 0 4px 20px rgba(37,211,102,0.3);
-  }
-  .btn-wa:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(37,211,102,0.45); background: #1db954; }
-
-  .hero-right {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .hero-img-grid {
-    position: absolute;
-    inset: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 4px;
-  }
-
-  .hero-img-cell {
-    overflow: hidden;
-    position: relative;
-  }
-  .hero-img-cell::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(123,31,58,0.15), transparent);
-  }
-
-  .hero-img-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    transition: transform 0.5s;
-  }
-  .hero-img-cell:hover .hero-img-placeholder { transform: scale(1.05); }
-
-  .cell-1 { background: linear-gradient(135deg, #e8d5c4, #d4b896); }
-  .cell-2 { background: linear-gradient(135deg, #c9a96e33, #e8c99a); }
-  .cell-3 { background: linear-gradient(135deg, #b8d4c8, #8fb8aa); }
-  .cell-4 { background: linear-gradient(135deg, #d4c4e8, #b89ec9); }
-
+  .hero-right { position: relative; overflow: hidden; }
+  .hero-img-grid { position: absolute; inset: 0; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 4px; }
+  .hero-img-cell { overflow: hidden; position: relative; }
+  .hero-img-cell::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(123,31,58,0.15), transparent); }
+  .hero-img-cell img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+  .hero-img-cell:hover img { transform: scale(1.05); }
   .hero-right-overlay {
-    position: absolute;
-    bottom: 40px;
-    left: -30px;
-    background: white;
-    padding: 24px 30px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.12);
-    z-index: 3;
-    border-left: 4px solid var(--gold);
-    animation: floatCard 3s ease-in-out infinite;
+    position: absolute; bottom: 40px; left: -30px; background: white;
+    padding: 24px 30px; box-shadow: 0 20px 60px rgba(0,0,0,0.12); z-index: 3;
+    border-left: 4px solid var(--gold); animation: floatCard 3s ease-in-out infinite;
   }
-  @keyframes floatCard {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
-  }
+  @keyframes floatCard { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
   .hero-stat { font-family: 'Playfair Display', serif; font-size: 36px; color: var(--burgundy); font-weight: 700; }
   .hero-stat-label { font-size: 11px; color: var(--text-light); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 2px; }
 
-  /* ── SECTION COMMON ── */
+  /* SECTIONS */
   section { padding: 100px 80px; }
   .section-header { text-align: center; margin-bottom: 70px; }
-  .section-tag {
-    display: inline-block;
-    font-size: 10px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--gold);
-    font-weight: 600;
-    margin-bottom: 16px;
-  }
-  .section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(32px, 4vw, 52px);
-    color: var(--dark);
-    line-height: 1.15;
-    margin-bottom: 20px;
-  }
+  .section-tag { display: inline-block; font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--burgundy); font-weight: 600; margin-bottom: 14px; }
+  .section-tag::before { content: '✦ '; }
+  .section-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 3vw, 2.8rem); font-weight: 400; color: var(--dark); line-height: 1.2; margin-bottom: 16px; }
   .section-title em { font-style: italic; color: var(--burgundy); }
-  .section-desc {
-    font-size: 15px;
-    color: var(--text-light);
-    line-height: 1.8;
-    max-width: 560px;
-    margin: 0 auto;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 19px;
-  }
-
-  /* ── PRODUCTS ── */
-  #productos { background: var(--warm-white); }
-
-  .products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 32px;
-  }
-
-  .product-card {
-    background: white;
-    overflow: hidden;
-    border: 1px solid rgba(201,169,110,0.2);
-    transition: all 0.4s;
-    position: relative;
-    cursor: pointer;
-  }
-  .product-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 30px 60px rgba(123,31,58,0.15);
-    border-color: var(--gold);
-  }
-
-  .product-img {
-    height: 220px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 60px;
-    position: relative;
-    overflow: hidden;
-  }
-  .product-img::after {
-    content: '';
-    position: absolute;
-    bottom: 0; left: 0; right: 0;
-    height: 40%;
-    background: linear-gradient(to top, rgba(255,255,255,0.8), transparent);
-  }
-
-  .p-cortinas { background: linear-gradient(135deg, #ffe0d0, #ffb899); }
-  .p-tapiceria { background: linear-gradient(135deg, #d0e8e0, #99ccba); }
-  .p-papel { background: linear-gradient(135deg, #e8e0d0, #ccba99); }
-  .p-alfombras { background: linear-gradient(135deg, #d0d8e8, #99aacc); }
-  .p-sabanas { background: linear-gradient(135deg, #e8d0e0, #cc99ba); }
-  .p-almohadas { background: linear-gradient(135deg, #e0e8d0, #bacc99); }
-
-  .product-info { padding: 28px; }
-  .product-tag {
-    font-size: 9px;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--gold);
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
-  .product-name {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    color: var(--dark);
-    margin-bottom: 12px;
-  }
-  .product-desc {
-    font-size: 13px;
-    color: var(--text-light);
-    line-height: 1.7;
-    margin-bottom: 20px;
-  }
-  .product-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--burgundy);
-    text-decoration: none;
-    transition: gap 0.2s;
-  }
-  .product-link:hover { gap: 12px; }
-
-  /* ── GALLERY ── */
-  #galeria { background: var(--dark); }
-  #galeria .section-title { color: white; }
-  #galeria .section-tag { color: var(--gold); }
-  #galeria .section-desc { color: rgba(255,255,255,0.6); }
-
-  .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 280px 280px;
-    gap: 8px;
-  }
-
-  .gallery-item {
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-  }
-  .gallery-item:first-child { grid-column: span 2; grid-row: span 2; }
-  .gallery-item:nth-child(4) { grid-column: span 2; }
-
-  .gallery-img {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-    transition: transform 0.6s;
-  }
-  .gallery-item:hover .gallery-img { transform: scale(1.08); }
-
-  .g1 { background: linear-gradient(135deg, #c9a96e22, #7B1F3A33), linear-gradient(to bottom, #e8d5c4, #c4a882); }
-  .g2 { background: linear-gradient(to bottom, #d4e8d0, #a8c9a0); }
-  .g3 { background: linear-gradient(to bottom, #e8d4d0, #c9a9a0); }
-  .g4 { background: linear-gradient(135deg, #d0dce8, #a0b4c9); }
-  .g5 { background: linear-gradient(to bottom, #e8e4d0, #c9c4a0); }
-
-  .gallery-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(123,31,58,0.8), transparent);
-    opacity: 0;
-    transition: opacity 0.3s;
-    display: flex;
-    align-items: flex-end;
-    padding: 24px;
-  }
-  .gallery-item:hover .gallery-overlay { opacity: 1; }
-  .gallery-caption {
-    color: white;
-    font-family: 'Playfair Display', serif;
-    font-size: 18px;
-    transform: translateY(10px);
-    transition: transform 0.3s;
-  }
-  .gallery-item:hover .gallery-caption { transform: translateY(0); }
-
-  /* ── ABOUT ── */
-  #nosotros {
-    background: var(--cream);
-    display: flex;
-    flex-direction: column;
-    padding: 100px 80px;
-  }
-
-  .about-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .about-visual {
-    position: relative;
-    height: 500px;
-  }
-  .about-img-main {
-    position: absolute;
-    top: 0; left: 0;
-    width: 75%;
-    height: 380px;
-    background: linear-gradient(135deg, #d4b896, #c9a96e);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 80px;
-    border: 6px solid white;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.1);
-  }
-  .about-img-accent {
-    position: absolute;
-    bottom: 0; right: 0;
-    width: 55%;
-    height: 260px;
-    background: var(--burgundy);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 6px solid white;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-  }
-  .about-img-accent-text {
-    text-align: center;
-    color: white;
-  }
-  .about-years { font-family: 'Playfair Display', serif; font-size: 64px; font-weight: 700; line-height: 1; }
-  .about-years-label { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.8; margin-top: 4px; }
-
-  .about-content .section-header { text-align: left; margin-bottom: 36px; }
-  .about-body {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 19px;
-    line-height: 1.8;
-    color: var(--text);
-    margin-bottom: 40px;
-  }
-  .about-values {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-bottom: 40px;
-  }
-  .about-value {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-  }
-  .about-value-icon {
-    width: 36px;
-    height: 36px;
-    background: var(--burgundy);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    flex-shrink: 0;
-    margin-top: 2px;
-  }
-  .about-value-text strong {
-    display: block;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--dark);
-    margin-bottom: 4px;
-  }
-  .about-value-text p {
-    font-size: 13px;
-    color: var(--text-light);
-    line-height: 1.6;
-  }
-
-  /* ── CONTACT ── */
-  #contacto { background: var(--warm-white); }
-  .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-  .contact-info h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 28px;
-    color: var(--dark);
-    margin-bottom: 32px;
-  }
-  .contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    margin-bottom: 28px;
-  }
-  .contact-icon {
-    width: 44px;
-    height: 44px;
-    background: var(--burgundy);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    flex-shrink: 0;
-  }
-  .contact-item-text strong {
-    display: block;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--text-light);
-    margin-bottom: 4px;
-  }
-  .contact-item-text a, .contact-item-text span {
-    font-size: 16px;
-    color: var(--dark);
-    text-decoration: none;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-  }
-  .contact-item-text a:hover { color: var(--burgundy); }
-
-  .contact-form {
-    background: var(--cream);
-    padding: 44px;
-    border: 1px solid rgba(201,169,110,0.3);
-  }
-  .contact-form h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    color: var(--dark);
-    margin-bottom: 28px;
-  }
-  .form-group { margin-bottom: 20px; }
-  .form-group label {
-    display: block;
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--text-light);
-    margin-bottom: 8px;
-  }
-  .form-group input, .form-group textarea, .form-group select {
-    width: 100%;
-    padding: 14px 18px;
-    border: 1px solid rgba(201,169,110,0.4);
-    background: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    color: var(--text);
-    outline: none;
-    transition: border-color 0.2s;
-  }
-  .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
-    border-color: var(--burgundy);
-  }
-  .form-group textarea { height: 100px; resize: vertical; }
-  .form-submit {
-    width: 100%;
-    padding: 16px;
-    background: var(--burgundy);
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    transition: all 0.3s;
-    margin-bottom: 12px;
-  }
-  .form-submit:hover { background: var(--burgundy-light); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(123,31,58,0.3); }
-  
-  .form-wa-btn {
-    width: 100%;
-    padding: 16px;
-    background: #25D366;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 9px;
-    text-decoration: none;
-    transition: all 0.3s;
-    box-shadow: 0 4px 15px rgba(37,211,102,0.3);
-  }
-  .form-wa-btn:hover { background: #1db954; transform: translateY(-2px); box-shadow: 0 8px 25px rgba(37,211,102,0.4); }
-
-  /* ── FOOTER WA BOTTOM ── */
-  .wa-bottom {
-    background: var(--burgundy);
-    padding: 60px 80px;
-    text-align: center;
-    color: white;
-  }
-  .wa-bottom-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    margin-bottom: 12px;
-  }
-  .wa-bottom-sub {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 19px;
-    opacity: 0.8;
-    margin-bottom: 36px;
-  }
-  .wa-bottom-num {
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    margin-bottom: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-  }
-  .wa-big-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    background: #25D366;
-    color: white;
-    padding: 20px 52px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    border-radius: 4px;
-    transition: all 0.3s;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
-    font-family: 'Montserrat', sans-serif;
-  }
-  .wa-big-btn:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.3); background: #1db954; }
-  .wa-big-btn svg { width: 24px; height: 24px; fill: white; }
-
-  /* ── FOOTER ── */
-  footer {
-    background: var(--dark);
-    color: white;
-    padding: 48px 80px 28px;
-  }
-  .footer-top {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 60px;
-    margin-bottom: 40px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-  }
-  .footer-brand .nav-logo-text span:first-child { color: rgba(255,255,255,0.4); }
-  .footer-brand .nav-logo-text span:last-child { color: white; }
-  .footer-tagline {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 16px;
-    color: rgba(255,255,255,0.6);
-    margin-top: 16px;
-    line-height: 1.6;
-  }
-  .footer-col h4 {
-    font-size: 10px;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 20px;
-    font-weight: 600;
-  }
-  .footer-col ul { list-style: none; }
-  .footer-col ul li { margin-bottom: 10px; }
-  .footer-col ul li a {
-    color: rgba(255,255,255,0.6);
-    text-decoration: none;
-    font-size: 14px;
-    transition: color 0.2s;
-  }
-  .footer-col ul li a:hover { color: white; }
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 12px;
-    color: rgba(255,255,255,0.35);
-  }
-
-  /* ── FLOATING WA BUTTON ── */
-  .wa-float {
-    position: fixed;
-    bottom: 28px;
-    right: 28px;
-    width: 58px;
-    height: 58px;
-    background: #25D366;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 8px 25px rgba(37,211,102,0.5);
-    cursor: pointer;
-    z-index: 999;
-    text-decoration: none;
-    transition: all 0.3s;
-    animation: waPulse 2s ease-in-out infinite;
-  }
-  @keyframes waPulse {
-    0%, 100% { box-shadow: 0 8px 25px rgba(37,211,102,0.5); }
-    50% { box-shadow: 0 8px 35px rgba(37,211,102,0.7), 0 0 0 8px rgba(37,211,102,0.1); }
-  }
-  .wa-float:hover { transform: scale(1.1) translateY(-3px); }
-  .wa-float svg { width: 30px; height: 30px; fill: white; }
-
-  /* ── HAMBURGER (mobile placeholder) ── */
-  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; }
-  .hamburger span { width: 24px; height: 2px; background: var(--burgundy); display: block; transition: all 0.3s; }
-
-  /* ── ANIMATIONS ── */
-  .fade-up {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.7s, transform 0.7s;
-  }
+  .section-desc { font-size: 15px; color: var(--text-light); max-width: 560px; margin: 0 auto; line-height: 1.7; font-weight: 300; }
+  .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .fade-up.visible { opacity: 1; transform: translateY(0); }
 
-  /* ── RESPONSIVE ── */
-  @media (max-width: 900px) {
-    section { padding: 70px 28px; }
-    nav { padding: 0 24px; }
-    .nav-links { display: none; }
-    .hamburger { display: flex; }
-    .hero { grid-template-columns: 1fr; min-height: auto; }
-    .hero-left { padding: 60px 28px; }
-    .hero-right { height: 300px; }
-    .about-inner { grid-template-columns: 1fr; }
-    .about-visual { height: 280px; }
-    .contact-grid { grid-template-columns: 1fr; }
-    .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
-    .gallery-item:first-child { grid-column: span 2; grid-row: span 1; }
-    .gallery-item:nth-child(4) { grid-column: span 1; }
-    .footer-top { grid-template-columns: 1fr; gap: 32px; }
-    .footer-bottom { flex-direction: column; gap: 10px; text-align: center; }
-    .wa-bottom { padding: 50px 28px; }
-    footer { padding: 40px 28px 24px; }
+  /* PRODUCTS */
+  #productos { background: var(--cream); }
+  .products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .product-card { background: var(--warm-white); padding: 40px 32px; border: 1px solid rgba(201,169,110,0.25); transition: all 0.3s; position: relative; overflow: hidden; }
+  .product-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(to right, var(--burgundy), var(--gold)); transform: scaleX(0); transform-origin: left; transition: transform 0.3s; }
+  .product-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(123,31,58,0.1); }
+  .product-card:hover::before { transform: scaleX(1); }
+  .product-icon { width: 56px; height: 56px; background: linear-gradient(135deg, var(--burgundy), var(--burgundy-light)); color: white; display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 20px; border-radius: 4px; }
+  .product-tag { font-size: 9px; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+  .product-card h3 { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-bottom: 12px; color: var(--dark); }
+  .product-card p { font-size: 14px; color: var(--text-light); line-height: 1.7; margin-bottom: 24px; font-weight: 300; }
+  .product-link { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--burgundy); text-decoration: none; display: flex; align-items: center; gap: 6px; transition: gap 0.2s; }
+  .product-link:hover { gap: 10px; }
+
+  /* GALLERY */
+  #galeria { background: var(--warm-white); }
+  .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: 280px 280px; gap: 8px; }
+  .gallery-item { overflow: hidden; position: relative; cursor: pointer; }
+  .gallery-item:first-child { grid-column: span 2; grid-row: span 2; }
+  .gallery-item:nth-child(4) { grid-column: span 2; }
+  .gallery-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s; display: block; }
+  .gallery-item:hover .gallery-img { transform: scale(1.08); }
+  .gallery-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(26,10,15,0.75) 0%, transparent 50%); display: flex; align-items: flex-end; padding: 24px; opacity: 0; transition: opacity 0.3s; }
+  .gallery-item:hover .gallery-overlay { opacity: 1; }
+  .gallery-caption { color: white; font-family: 'Playfair Display', serif; font-style: italic; font-size: 16px; font-weight: 400; }
+  .gallery-cta { text-align: center; margin-top: 48px; }
+  .btn-wa-gallery { display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: white; padding: 16px 36px; text-decoration: none; font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; border-radius: 4px; transition: background 0.2s; }
+  .btn-wa-gallery:hover { background: #20b858; }
+
+  /* NOSOTROS */
+  #nosotros { background: var(--cream); }
+  .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .about-visual { position: relative; height: 520px; }
+  .about-img-main { position: absolute; top: 0; left: 0; width: 75%; height: 380px; border: 6px solid white; box-shadow: 0 20px 60px rgba(0,0,0,0.1); overflow: hidden; }
+  .about-img-main img { width: 100%; height: 100%; object-fit: cover; }
+  .about-img-accent { position: absolute; bottom: 0; right: 0; width: 55%; height: 260px; background: var(--burgundy); display: flex; align-items: center; justify-content: center; border: 6px solid white; box-shadow: 0 20px 60px rgba(0,0,0,0.15); }
+  .about-img-accent-text { text-align: center; color: white; }
+  .about-years { font-family: 'Playfair Display', serif; font-size: 64px; font-weight: 700; line-height: 1; }
+  .about-years-label { font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.8; margin-top: 4px; }
+  .about-content .section-header { text-align: left; margin-bottom: 36px; }
+  .about-content .section-header .section-desc { margin: 0; }
+  .about-text { font-size: 15px; color: var(--text-light); line-height: 1.8; font-weight: 300; margin-bottom: 16px; }
+  .values-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 36px 0; }
+  .value-item { padding: 20px; border: 1px solid rgba(201,169,110,0.3); background: var(--warm-white); }
+  .value-emoji { font-size: 20px; margin-bottom: 8px; }
+  .value-item strong { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--dark); margin-bottom: 4px; }
+  .value-item p { font-size: 13px; color: var(--text-light); font-weight: 300; }
+
+  /* CONTACTO */
+  #contacto { background: var(--warm-white); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; }
+  .contact-info h3 { font-family: 'Playfair Display', serif; font-size: 28px; color: var(--dark); margin-bottom: 32px; }
+  .contact-item { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 28px; }
+  .contact-icon { width: 44px; height: 44px; background: var(--burgundy); color: white; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+  .contact-item-text strong { display: block; font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-light); margin-bottom: 4px; }
+  .contact-item-text a, .contact-item-text span { color: var(--dark); text-decoration: none; font-family: 'Cormorant Garamond', serif; font-size: 18px; }
+  .contact-item-text a:hover { color: var(--burgundy); }
+  .contact-form { background: var(--cream); padding: 44px; border: 1px solid rgba(201,169,110,0.3); }
+  .contact-form h3 { font-family: 'Playfair Display', serif; font-size: 24px; color: var(--dark); margin-bottom: 28px; }
+  .form-group { margin-bottom: 16px; }
+  .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 14px 18px; border: 1px solid rgba(201,169,110,0.4); background: var(--warm-white); font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 300; color: var(--text); outline: none; transition: border-color 0.2s; }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--burgundy); }
+  .form-group textarea { height: 110px; resize: vertical; }
+  .btn-form { width: 100%; background: var(--burgundy); color: white; padding: 16px; border: none; font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; cursor: pointer; transition: background 0.2s; margin-bottom: 16px; }
+  .btn-form:hover { background: var(--burgundy-light); }
+  .form-wa-alt { text-align: center; font-size: 13px; color: var(--text-light); }
+  .form-wa-alt a { color: #25D366; text-decoration: none; font-weight: 600; }
+
+  /* WA BOTTOM */
+  .wa-bottom { background: var(--burgundy); color: white; text-align: center; padding: 70px 80px; }
+  .wa-bottom h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 400; margin-bottom: 12px; }
+  .wa-bottom p { font-size: 15px; opacity: 0.8; margin-bottom: 8px; font-weight: 300; }
+  .wa-bottom-phone { font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--gold-light); display: block; margin-bottom: 32px; }
+  .btn-wa-bottom { display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: white; padding: 18px 44px; text-decoration: none; font-size: 12px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; border-radius: 4px; transition: background 0.2s; }
+  .btn-wa-bottom:hover { background: #20b858; }
+
+  /* FOOTER */
+  footer { background: var(--dark); color: #888; padding: 70px 80px 40px; }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 60px; margin-bottom: 48px; }
+  .footer-brand-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  .footer-brand-logo .logo-icon { width: 44px; height: 44px; border: 2px solid var(--burgundy); display: flex; align-items: center; justify-content: center; font-size: 16px; }
+  .footer-brand-logo .logo-text span:first-child { display: block; font-size: 9px; font-weight: 600; letter-spacing: 0.25em; text-transform: uppercase; color: #666; }
+  .footer-brand-logo .logo-text span:last-child { display: block; font-family: 'Playfair Display', serif; font-size: 22px; color: #fff; font-weight: 700; }
+  .footer-brand p { font-size: 14px; color: #666; line-height: 1.7; max-width: 280px; font-weight: 300; }
+  footer h4 { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: white; margin-bottom: 20px; font-weight: 600; }
+  footer ul { list-style: none; }
+  footer ul li { margin-bottom: 10px; }
+  footer ul li a { text-decoration: none; color: #666; font-size: 14px; font-weight: 300; transition: color 0.2s; }
+  footer ul li a:hover { color: var(--gold-light); }
+  .footer-bottom { border-top: 1px solid #2a1820; padding-top: 28px; display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: #444; flex-wrap: wrap; gap: 12px; }
+
+  /* WA FLOAT */
+  .wa-float { position: fixed; bottom: 28px; right: 28px; width: 56px; height: 56px; background: #25D366; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 26px; text-decoration: none; box-shadow: 0 8px 30px rgba(37,211,102,0.4); z-index: 999; transition: transform 0.2s; }
+  .wa-float:hover { transform: scale(1.1); }
+
+  /* RESPONSIVE */
+  @media (max-width: 1024px) {
+    nav { padding: 0 32px; }
+    section { padding: 70px 40px; }
+    .hero-left { padding: 60px 40px; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .footer-brand { grid-column: span 2; }
   }
-</style>
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-right { display: none; }
+    .products-grid { grid-template-columns: 1fr 1fr; }
+    .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: repeat(3,200px); }
+    .gallery-item:first-child { grid-column: span 2; }
+    .gallery-item:nth-child(4) { grid-column: span 1; }
+    .about-inner { grid-template-columns: 1fr; }
+    .about-visual { display: none; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+    .hamburger { display: block; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-brand { grid-column: span 1; }
+    footer { padding: 50px 24px 30px; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    section { padding: 60px 24px; }
+    .wa-bottom { padding: 60px 24px; }
+    nav { padding: 0 20px; }
+  }
+  </style>
 </head>
 <body>
 
-<!-- WHATSAPP TOP BAR -->
-<div class="wa-topbar">
-  <span>📍 Ituzaingo 1188, Lanús Este &nbsp;|&nbsp; Horario: Lun–Vie 9:00–18:00, Sáb 9:00–13:00</span>
-  <a href="https://wa.me/5491142495242" target="_blank">
-    <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    Contacta Ventas: +54 11 4249-5242
-  </a>
-</div>
-
-<!-- NAVBAR -->
-<nav>
-  <a href="#inicio" class="nav-logo">
-    <svg class="nav-logo-icon" viewBox="0 0 44 44">
-      <polygon points="22,4 40,22 22,40 4,22" fill="none" stroke="#7B1F3A" stroke-width="2"/>
-      <polygon points="22,10 34,22 22,34 10,22" fill="#7B1F3A" opacity="0.15"/>
-      <line x1="4" y1="22" x2="40" y2="22" stroke="#C9A96E" stroke-width="1.5"/>
-    </svg>
-    <div class="nav-logo-text">
-      <span>Decoraciones</span>
-      <span>Gaby</span>
-    </div>
-  </a>
-  <ul class="nav-links">
-    <li><a href="#inicio">Inicio</a></li>
-    <li><a href="#productos">Productos</a></li>
-    <li><a href="#galeria">Galería</a></li>
-    <li><a href="#nosotros">Nosotros</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-    <li>
-      <a href="https://wa.me/5491142495242" target="_blank" class="btn-wa-nav">
-        <svg style="width:14px;height:14px;fill:white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Contacta Ventas
-      </a>
-    </li>
-  </ul>
-  <div class="hamburger" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section id="inicio" class="hero" style="padding:0">
-  <div class="hero-left">
-    <div class="hero-badge">✦ Desde 1990 en Lanús Este</div>
-    <h1 class="hero-title">
-      Elegancia para<br>
-      <em>tu hogar</em>
-    </h1>
-    <p class="hero-subtitle">Cortinas · Tapicería · Papel · Alfombras</p>
-    <div class="hero-divider"></div>
-    <p class="hero-desc">
-      Transformamos cada ambiente en un espacio único. Más de 30 años vistiendo los hogares de Buenos Aires con calidad, estilo y atención personalizada.
-    </p>
-    <div class="hero-btns">
-      <a href="#productos" class="btn-primary"><span>Ver Productos</span></a>
-      <a href="https://wa.me/5491142495242?text=Hola!%20Me%20gustaría%20consultar%20sobre%20sus%20productos." target="_blank" class="btn-wa">
-        <svg style="width:18px;height:18px;fill:white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Contacta Ventas
-      </a>
-    </div>
-  </div>
-  <div class="hero-right">
-    <div class="hero-img-grid">
-      <div class="hero-img-cell"><div class="hero-img-placeholder cell-1">🪟</div></div>
-      <div class="hero-img-cell"><div class="hero-img-placeholder cell-2">🛋️</div></div>
-      <div class="hero-img-cell"><div class="hero-img-placeholder cell-3">🛏️</div></div>
-      <div class="hero-img-cell"><div class="hero-img-placeholder cell-4">🏠</div></div>
-    </div>
-    <div class="hero-right-overlay">
-      <div class="hero-stat">+30</div>
-      <div class="hero-stat-label">Años de experiencia</div>
-    </div>
-  </div>
-</section>
-
-<!-- PRODUCTOS -->
-<section id="productos">
-  <div class="section-header fade-up">
-    <span class="section-tag">✦ Lo que ofrecemos</span>
-    <h2 class="section-title">Nuestros <em>Productos</em></h2>
-    <p class="section-desc">Selección premium para cada rincón de tu hogar, con asesoramiento personalizado.</p>
-  </div>
-  <div class="products-grid">
-    <div class="product-card fade-up">
-      <div class="product-img p-cortinas">🪟</div>
-      <div class="product-info">
-        <div class="product-tag">Interior</div>
-        <h3 class="product-name">Cortinería</h3>
-        <p class="product-desc">Cortinas de tela, blackout, roller, romanas y más. Medidas a pedido con instalación incluida.</p>
-        <a href="https://wa.me/5491142495242?text=Hola!%20Quiero%20consultar%20sobre%20cortinas." target="_blank" class="product-link">Consultar →</a>
-      </div>
-    </div>
-    <div class="product-card fade-up" style="transition-delay:0.1s">
-      <div class="product-img p-tapiceria">🛋️</div>
-      <div class="product-info">
-        <div class="product-tag">Muebles</div>
-        <h3 class="product-name">Tapicería</h3>
-        <p class="product-desc">Renovamos sillas, sillones y sofás con los mejores materiales. Trabajamos con telas nacionales e importadas.</p>
-        <a href="https://wa.me/5491142495242?text=Hola!%20Quiero%20consultar%20sobre%20tapicería." target="_blank" class="product-link">Consultar →</a>
-      </div>
-    </div>
-    <div class="product-card fade-up" style="transition-delay:0.2s">
-      <div class="product-img p-papel">🎨</div>
-      <div class="product-info">
-        <div class="product-tag">Revestimientos</div>
-        <h3 class="product-name">Papel Tapiz</h3>
-        <p class="product-desc">Gran variedad en diseños, texturas y colores. Vinílicos, textiles, ecológicos y más. Colocación profesional.</p>
-        <a href="https://wa.me/5491142495242?text=Hola!%20Quiero%20consultar%20sobre%20papel%20tapiz." target="_blank" class="product-link">Consultar →</a>
-      </div>
-    </div>
-    <div class="product-card fade-up" style="transition-delay:0.3s">
-      <div class="product-img p-alfombras">🏡</div>
-      <div class="product-info">
-        <div class="product-tag">Pisos</div>
-        <h3 class="product-name">Alfombras</h3>
-        <p class="product-desc">Alfombras a medida, carpetas, pisos vinílicos y más. Para dormitorios, living, escaleras y espacios comerciales.</p>
-        <a href="https://wa.me/5491142495242?text=Hola!%20Quiero%20consultar%20sobre%20alfombras." target="_blank" class="product-link">Consultar →</a>
-      </div>
-    </div>
-    <div class="product-card fade-up" style="transition-delay:0.4s">
-      <div class="product-img p-sabanas">🛏️</div>
-      <div class="product-info">
-        <div class="product-tag">Textil hogar</div>
-        <h3 class="product-name">Ropa de Cama</h3>
-        <p class="product-desc">Sábanas, acolchados, almohadas y accesorios en las mejores telas. Algodón peinado, microfibra y más.</p>
-        <a href="https://wa.me/5491142495242?text=Hola!%20Quiero%20consultar%20sobre%20ropa%20de%20cama." target="_blank" class="product-link">Consultar →</a>
-      </div>
-    </div>
-    <div class="product-card fade-up" style="transition-delay:0.5s">
-      <div class="product-img p-almohadas">✨</div>
-      <div class="product-info">
-        <div class="product-tag">Accesorios</div>
-        <h3 class="product-name">Accesorios Deco</h3>
-        <p class="product-desc">Bastones, ganchos, rieles, accesorios para cortinas y detalles decorativos para completar tu espacio.</p>
-        <a href="https://wa.me/5491142495242?text=Hola!%20Quiero%20consultar%20sobre%20accesorios." target="_blank" class="product-link">Consultar →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- GALERÍA -->
-<section id="galeria">
-  <div class="section-header fade-up">
-    <span class="section-tag">✦ Inspiración</span>
-    <h2 class="section-title">Nuestra <em>Galería</em></h2>
-    <p class="section-desc">Algunos de los ambientes que hemos transformado con nuestra pasión por el diseño.</p>
-  </div>
-  <div class="gallery-grid fade-up">
-    <div class="gallery-item">
-      <div class="gallery-img g1">🪟</div>
-      <div class="gallery-overlay"><div class="gallery-caption">Cortinas Living Palermo</div></div>
-    </div>
-    <div class="gallery-item">
-      <div class="gallery-img g2">🛏️</div>
-      <div class="gallery-overlay"><div class="gallery-caption">Dormitorio en San Isidro</div></div>
-    </div>
-    <div class="gallery-item">
-      <div class="gallery-img g3">🛋️</div>
-      <div class="gallery-overlay"><div class="gallery-caption">Tapizado Clásico</div></div>
-    </div>
-    <div class="gallery-item">
-      <div class="gallery-img g4">🎨</div>
-      <div class="gallery-overlay"><div class="gallery-caption">Papel Tapiz Geométrico</div></div>
-    </div>
-    <div class="gallery-item">
-      <div class="gallery-img g5">🏡</div>
-      <div class="gallery-overlay"><div class="gallery-caption">Alfombra a Medida</div></div>
-    </div>
-  </div>
-  <div style="text-align:center;margin-top:44px">
-    <a href="https://wa.me/5491142495242?text=Hola!%20Me%20gustaría%20ver%20más%20fotos%20de%20sus%20trabajos." target="_blank" class="btn-wa" style="display:inline-flex">
-      <svg style="width:18px;height:18px;fill:white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Pedir más fotos por WhatsApp
+  <div class="wa-topbar">
+    <span>📍 Ituzaingo 1188, Lanús Este &nbsp;|&nbsp; Horario: Lun–Vie 9:00–18:00, Sáb 9:00–13:00</span>
+    <a href="https://wa.me/5491142495242">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Contacta Ventas: +54 11 4249-5242
     </a>
   </div>
-</section>
 
-<!-- NOSOTROS -->
-<section id="nosotros" style="padding:100px 80px;background:var(--cream)">
-  <div class="about-inner">
-    <div class="about-visual fade-up">
-      <div class="about-img-main">🏠</div>
-      <div class="about-img-accent">
-        <div class="about-img-accent-text">
-          <div class="about-years">+30</div>
-          <div class="about-years-label">Años vistiendo hogares</div>
-        </div>
+  <nav>
+    <a class="nav-logo" href="#inicio">
+      <div class="nav-logo-icon">◇</div>
+      <div class="nav-logo-text"><span>Decoraciones</span><span>Gaby</span></div>
+    </a>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <ul class="nav-links">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a class="nav-cta" href="https://wa.me/5491142495242"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Contacta Ventas</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <div class="hero-left">
+      <div class="hero-badge">✦ Desde 1990 en Lanús Este</div>
+      <h1 class="hero-title">Elegancia para</h1>
+      <span class="hero-title-italic">tu hogar</span>
+      <div class="hero-divider"></div>
+      <p class="hero-subtitle">Cortinas · Tapicería · Papel · Alfombras</p>
+      <p class="hero-desc">Transformamos cada ambiente en un espacio único. Más de 30 años vistiendo los hogares de Buenos Aires con calidad, estilo y atención personalizada.</p>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="#productos">Ver Productos</a>
+        <a class="btn-wa-hero" href="https://wa.me/5491142495242?text=Hola!%20Me%20gustaría%20consultar%20sobre%20sus%20productos."><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Contacta Ventas</a>
       </div>
     </div>
-    <div class="about-content fade-up" style="transition-delay:0.2s">
-      <div class="section-header" style="text-align:left;margin-bottom:36px">
-        <span class="section-tag">✦ Quiénes somos</span>
-        <h2 class="section-title">La historia<br>de <em>Gaby</em></h2>
+    <div class="hero-right">
+      <div class="hero-img-grid">
+        <div class="hero-img-cell"><img src="pexels-castorlystock-3682240.jpg" alt="Cama con almohadones" /></div>
+        <div class="hero-img-cell"><img src="ryan-kwok-S1kOsHqGrw0-unsplash.jpg" alt="Sábanas blancas" /></div>
+        <div class="hero-img-cell"><img src="pexels-catscoming-763146.jpg" alt="Dormitorio infantil" /></div>
+        <div class="hero-img-cell"><img src="pexels-curtis-adams-1694007-3288100.jpg" alt="Dormitorio completo" /></div>
       </div>
-      <p class="about-body">
-        Decoraciones Gaby nació en Lanús Este con un sueño simple: llevar belleza y confort a cada hogar de Buenos Aires. Desde 1990, trabajamos con dedicación y pasión para transformar espacios ordinarios en ambientes extraordinarios.
-      </p>
-      <p class="about-body" style="margin-bottom:36px">
-        Nuestro equipo de profesionales te acompaña desde la elección del material hasta la instalación final, garantizando un resultado impecable en cada proyecto.
-      </p>
-      <div class="about-values">
-        <div class="about-value">
-          <div class="about-value-icon">⭐</div>
-          <div class="about-value-text">
-            <strong>Calidad</strong>
-            <p>Solo trabajamos con materiales de primera selección.</p>
-          </div>
-        </div>
-        <div class="about-value">
-          <div class="about-value-icon">🤝</div>
-          <div class="about-value-text">
-            <strong>Confianza</strong>
-            <p>Más de 30 años de trayectoria nos avalan.</p>
-          </div>
-        </div>
-        <div class="about-value">
-          <div class="about-value-icon">✂️</div>
-          <div class="about-value-text">
-            <strong>A medida</strong>
-            <p>Cada trabajo es único y personalizado.</p>
-          </div>
-        </div>
-        <div class="about-value">
-          <div class="about-value-icon">🚚</div>
-          <div class="about-value-text">
-            <strong>Instalación</strong>
-            <p>Servicio completo hasta la última colocación.</p>
-          </div>
-        </div>
-      </div>
-      <a href="https://wa.me/5491142495242?text=Hola!%20Me%20gustaría%20saber%20más%20sobre%20Decoraciones%20Gaby." target="_blank" class="btn-wa" style="display:inline-flex">
-        <svg style="width:16px;height:16px;fill:white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        Contacta Ventas
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACTO -->
-<section id="contacto">
-  <div class="section-header fade-up">
-    <span class="section-tag">✦ Estamos para vos</span>
-    <h2 class="section-title">Ponete en <em>Contacto</em></h2>
-    <p class="section-desc">Visitanos en nuestro local o escribinos. Te respondemos a la brevedad.</p>
-  </div>
-  <div class="contact-grid">
-    <div class="contact-info fade-up">
-      <h3>Información de contacto</h3>
-      <div class="contact-item">
-        <div class="contact-icon">📍</div>
-        <div class="contact-item-text">
-          <strong>Dirección</strong>
-          <span>Ituzaingo 1188, Lanús Este<br>Buenos Aires, Argentina</span>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-icon">📞</div>
-        <div class="contact-item-text">
-          <strong>Teléfono</strong>
-          <a href="tel:+5411 42495242">4249-5242</a>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-icon" style="background:#25D366">
-          <svg style="width:20px;height:20px;fill:white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        </div>
-        <div class="contact-item-text">
-          <strong>WhatsApp</strong>
-          <a href="https://wa.me/5491142495242" target="_blank">+54 11 4249-5242</a>
-        </div>
-      </div>
-      <div class="contact-item">
-        <div class="contact-icon">🕐</div>
-        <div class="contact-item-text">
-          <strong>Horarios</strong>
-          <span>Lunes a Viernes: 9:00 – 18:00<br>Sábados: 9:00 – 13:00</span>
-        </div>
+      <div class="hero-right-overlay">
+        <div class="hero-stat">+30</div>
+        <div class="hero-stat-label">Años de experiencia</div>
       </div>
     </div>
+  </section>
 
-    <div class="contact-form fade-up" style="transition-delay:0.2s">
-      <h3>Solicitá tu presupuesto</h3>
-      <div class="form-group">
-        <label>Tu nombre</label>
-        <input type="text" placeholder="María González">
-      </div>
-      <div class="form-group">
-        <label>Teléfono</label>
-        <input type="tel" placeholder="+54 11 1234-5678">
-      </div>
-      <div class="form-group">
-        <label>¿Qué necesitás?</label>
-        <select>
-          <option value="">Seleccioná un producto...</option>
-          <option>Cortinería</option>
-          <option>Tapicería</option>
-          <option>Papel Tapiz</option>
-          <option>Alfombras</option>
-          <option>Ropa de Cama</option>
-          <option>Accesorios</option>
-          <option>Consulta general</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Mensaje</label>
-        <textarea placeholder="Contanos qué ambiente querés decorar..."></textarea>
-      </div>
-      <button class="form-submit" onclick="sendForm()">Enviar consulta</button>
-      <a href="https://wa.me/5491142495242?text=Hola!%20Quiero%20pedir%20un%20presupuesto." target="_blank" class="form-wa-btn">
-        <svg style="width:18px;height:18px;fill:white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        O escribinos directo por WhatsApp
-      </a>
+  <section id="productos">
+    <div class="section-header fade-up">
+      <p class="section-tag">Lo que ofrecemos</p>
+      <h2 class="section-title">Nuestros <em>Productos</em></h2>
+      <p class="section-desc">Selección premium para cada rincón de tu hogar, con asesoramiento personalizado.</p>
     </div>
-  </div>
-</section>
+    <div class="products-grid">
+      <div class="product-card fade-up"><div class="product-icon">🪟</div><p class="product-tag">Interior</p><h3>Cortinería</h3><p>Cortinas de tela, blackout, roller, romanas y más. Medidas a pedido con instalación incluida.</p><a class="product-link" href="https://wa.me/5491142495242?text=Hola!%20Quiero%20consultar%20sobre%20cortinas.">Consultar →</a></div>
+      <div class="product-card fade-up"><div class="product-icon">🛋️</div><p class="product-tag">Muebles</p><h3>Tapicería</h3><p>Renovamos sillas, sillones y sofás con los mejores materiales. Trabajamos con telas nacionales e importadas.</p><a class="product-link" href="https://wa.me/5491142495242?text=Hola!%20Quiero%20consultar%20sobre%20tapicería.">Consultar →</a></div>
+      <div class="product-card fade-up"><div class="product-icon">🎨</div><p class="product-tag">Revestimientos</p><h3>Papel Tapiz</h3><p>Gran variedad en diseños, texturas y colores. Vinílicos, textiles, ecológicos y más. Colocación profesional.</p><a class="product-link" href="https://wa.me/5491142495242?text=Hola!%20Quiero%20consultar%20sobre%20papel%20tapiz.">Consultar →</a></div>
+      <div class="product-card fade-up"><div class="product-icon">🏡</div><p class="product-tag">Pisos</p><h3>Alfombras</h3><p>Alfombras a medida, carpetas, pisos vinílicos y más. Para dormitorios, living, escaleras y espacios comerciales.</p><a class="product-link" href="https://wa.me/5491142495242?text=Hola!%20Quiero%20consultar%20sobre%20alfombras.">Consultar →</a></div>
+      <div class="product-card fade-up"><div class="product-icon">🛏️</div><p class="product-tag">Textil hogar</p><h3>Ropa de Cama</h3><p>Sábanas, acolchados, almohadas y accesorios en las mejores telas. Algodón peinado, microfibra y más.</p><a class="product-link" href="https://wa.me/5491142495242?text=Hola!%20Quiero%20consultar%20sobre%20ropa%20de%20cama.">Consultar →</a></div>
+      <div class="product-card fade-up"><div class="product-icon">✨</div><p class="product-tag">Accesorios</p><h3>Accesorios Deco</h3><p>Bastones, ganchos, rieles, accesorios para cortinas y detalles decorativos para completar tu espacio.</p><a class="product-link" href="https://wa.me/5491142495242?text=Hola!%20Quiero%20consultar%20sobre%20accesorios.">Consultar →</a></div>
+    </div>
+  </section>
 
-<!-- WA BOTTOM BANNER -->
-<div class="wa-bottom">
-  <h2 class="wa-bottom-title">¿Listo para transformar tu hogar?</h2>
-  <p class="wa-bottom-sub">Escribinos ahora y recibí un presupuesto sin cargo</p>
-  <div class="wa-bottom-num">
-    <svg style="width:32px;height:32px;fill:#25D366" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    +54 11 4249-5242
+  <section id="galeria">
+    <div class="section-header fade-up">
+      <p class="section-tag">Inspiración</p>
+      <h2 class="section-title">Nuestra <em>Galería</em></h2>
+      <p class="section-desc">Algunos de los ambientes que hemos transformado con nuestra pasión por el diseño.</p>
+    </div>
+    <div class="gallery-grid fade-up">
+      <div class="gallery-item">
+        <img class="gallery-img" src="pexels-castorlystock-3682240.jpg" alt="Ropa de cama premium" />
+        <div class="gallery-overlay"><div class="gallery-caption">Ropa de Cama Premium</div></div>
+      </div>
+      <div class="gallery-item">
+        <img class="gallery-img" src="meggy-xue-44nF0LyGryI-unsplash.jpg" alt="Sábanas en luz natural" />
+        <div class="gallery-overlay"><div class="gallery-caption">Dormitorio en San Isidro</div></div>
+      </div>
+      <div class="gallery-item">
+        <img class="gallery-img" src="pexels-cottonbro-4108809.jpg" alt="Acomodando sábanas" />
+        <div class="gallery-overlay"><div class="gallery-caption">Tapizado Clásico</div></div>
+      </div>
+      <div class="gallery-item">
+        <img class="gallery-img" src="pexels-curtis-adams-1694007-3288100.jpg" alt="Dormitorio completo" />
+        <div class="gallery-overlay"><div class="gallery-caption">Papel Tapiz Geométrico</div></div>
+      </div>
+      <div class="gallery-item">
+        <img class="gallery-img" src="pexels-jill-burrow-6758069.jpg" alt="Telas plegadas" />
+        <div class="gallery-overlay"><div class="gallery-caption">Alfombra a Medida</div></div>
+      </div>
+    </div>
+    <div class="gallery-cta">
+      <a class="btn-wa-gallery" href="https://wa.me/5491142495242?text=Hola!%20Me%20gustaría%20ver%20más%20fotos%20de%20sus%20trabajos."><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Pedir más fotos por WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <div class="about-inner">
+      <div class="about-visual fade-up">
+        <div class="about-img-main">
+          <img src="pexels-cottonbro-4108809.jpg" alt="Servicio de ropa de cama" />
+        </div>
+        <div class="about-img-accent">
+          <div class="about-img-accent-text">
+            <div class="about-years">+30</div>
+            <div class="about-years-label">Años vistiendo hogares</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content fade-up">
+        <div class="section-header">
+          <p class="section-tag">Quiénes somos</p>
+          <h2 class="section-title">La historia de <em>Gaby</em></h2>
+        </div>
+        <p class="about-text">Decoraciones Gaby nació en Lanús Este con un sueño simple: llevar belleza y confort a cada hogar de Buenos Aires. Desde 1990, trabajamos con dedicación y pasión para transformar espacios ordinarios en ambientes extraordinarios.</p>
+        <p class="about-text">Nuestro equipo de profesionales te acompaña desde la elección del material hasta la instalación final, garantizando un resultado impecable en cada proyecto.</p>
+        <div class="values-grid">
+          <div class="value-item"><div class="value-emoji">⭐</div><strong>Calidad</strong><p>Solo trabajamos con materiales de primera selección.</p></div>
+          <div class="value-item"><div class="value-emoji">🤝</div><strong>Confianza</strong><p>Más de 30 años de trayectoria nos avalan.</p></div>
+          <div class="value-item"><div class="value-emoji">✂️</div><strong>A medida</strong><p>Cada trabajo es único y personalizado.</p></div>
+          <div class="value-item"><div class="value-emoji">🚚</div><strong>Instalación</strong><p>Servicio completo hasta la última colocación.</p></div>
+        </div>
+        <a class="btn-wa-hero" href="https://wa.me/5491142495242?text=Hola!%20Me%20gustaría%20saber%20más%20sobre%20Decoraciones%20Gaby." style="display:inline-flex;"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Contacta Ventas</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="section-header fade-up">
+      <p class="section-tag">Estamos para vos</p>
+      <h2 class="section-title">Ponete en <em>Contacto</em></h2>
+      <p class="section-desc">Visitanos en nuestro local o escribinos. Te respondemos a la brevedad.</p>
+    </div>
+    <div class="contact-grid fade-up">
+      <div class="contact-info">
+        <h3>Información de contacto</h3>
+        <div class="contact-item"><div class="contact-icon">📍</div><div class="contact-item-text"><strong>Dirección</strong><span>Ituzaingo 1188, Lanús Este<br>Buenos Aires, Argentina</span></div></div>
+        <div class="contact-item"><div class="contact-icon">📞</div><div class="contact-item-text"><strong>Teléfono</strong><a href="tel:+541142495242">4249-5242</a></div></div>
+        <div class="contact-item"><div class="contact-icon">💬</div><div class="contact-item-text"><strong>WhatsApp</strong><a href="https://wa.me/5491142495242">+54 11 4249-5242</a></div></div>
+        <div class="contact-item"><div class="contact-icon">🕐</div><div class="contact-item-text"><strong>Horarios</strong><span>Lunes a Viernes: 9:00 – 18:00<br>Sábados: 9:00 – 13:00</span></div></div>
+      </div>
+      <div class="contact-form">
+        <h3>Solicitá tu presupuesto</h3>
+        <div class="form-group"><input type="text" placeholder="Tu nombre" /></div>
+        <div class="form-group"><input type="tel" placeholder="Teléfono" /></div>
+        <div class="form-group"><select><option value="" disabled selected>Seleccioná un producto...</option><option>Cortinería</option><option>Tapicería</option><option>Papel Tapiz</option><option>Alfombras</option><option>Ropa de Cama</option><option>Accesorios</option><option>Consulta general</option></select></div>
+        <div class="form-group"><textarea placeholder="Mensaje"></textarea></div>
+        <button class="btn-form" onclick="sendForm()">Enviar consulta</button>
+        <p class="form-wa-alt">O escribinos directo por <a href="https://wa.me/5491142495242?text=Hola!%20Quiero%20pedir%20un%20presupuesto.">WhatsApp</a></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wa-bottom">
+    <h2>¿Listo para transformar tu hogar?</h2>
+    <p>Escribinos ahora y recibí un presupuesto sin cargo</p>
+    <span class="wa-bottom-phone">+54 11 4249-5242</span>
+    <a class="btn-wa-bottom" href="https://wa.me/5491142495242?text=Hola!%20Me%20gustaría%20pedir%20un%20presupuesto%20sin%20cargo."><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Contacta Ventas</a>
   </div>
-  <a href="https://wa.me/5491142495242?text=Hola!%20Me%20gustaría%20pedir%20un%20presupuesto%20sin%20cargo." target="_blank" class="wa-big-btn">
-    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    Contacta Ventas
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-logo"><div class="logo-icon">◇</div><div class="logo-text"><span>Decoraciones</span><span>Gaby S.A.</span></div></div>
+        <p>Más de 30 años vistiendo los hogares de Buenos Aires con pasión, calidad y dedicación artesanal.</p>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul><li><a href="#inicio">Inicio</a></li><li><a href="#productos">Productos</a></li><li><a href="#galeria">Galería</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#contacto">Contacto</a></li></ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul><li><a href="#">Ituzaingo 1188, Lanús Este</a></li><li><a href="tel:+541142495242">Tel: 4249-5242</a></li><li><a href="https://wa.me/5491142495242">WhatsApp Ventas</a></li><li><a href="#">Lun–Vie 9:00–18:00</a></li><li><a href="#">Sáb 9:00–13:00</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Decoraciones Gaby S.A. · Todos los derechos reservados</span>
+      <span>Lanús Este, Buenos Aires, Argentina</span>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/5491142495242" target="_blank">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
-</div>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-top">
-    <div class="footer-brand">
-      <a href="#inicio" class="nav-logo" style="margin-bottom:16px;display:inline-flex">
-        <div class="nav-logo-text">
-          <span>Decoraciones</span>
-          <span>Gaby S.A.</span>
-        </div>
-      </a>
-      <p class="footer-tagline">Más de 30 años vistiendo los hogares de Buenos Aires con pasión, calidad y dedicación artesanal.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Navegación</h4>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contacto</h4>
-      <ul>
-        <li><a href="#">Ituzaingo 1188, Lanús Este</a></li>
-        <li><a href="tel:+541142495242">Tel: 4249-5242</a></li>
-        <li><a href="https://wa.me/5491142495242" target="_blank">WhatsApp Ventas</a></li>
-        <li><a href="#">Lun–Vie 9:00–18:00</a></li>
-        <li><a href="#">Sáb 9:00–13:00</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>© 2025 Decoraciones Gaby S.A. · Todos los derechos reservados</span>
-    <span>Lanús Este, Buenos Aires, Argentina</span>
-  </div>
-</footer>
-
-<!-- FLOATING WA BUTTON -->
-<a href="https://wa.me/5491142495242?text=Hola!%20Me%20gustaría%20consultar%20sobre%20sus%20productos." target="_blank" class="wa-float" title="Escribinos por WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-</a>
-
-<script>
-  // Scroll animations
+  <script>
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
   }, { threshold: 0.1 });
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-  // Mobile menu
   function toggleMenu() {
     const links = document.querySelector('.nav-links');
     if (links.style.display === 'flex') {
@@ -1279,7 +433,6 @@
     }
   }
 
-  // Form handler
   function sendForm() {
     const name = document.querySelector('input[type="text"]').value;
     const phone = document.querySelector('input[type="tel"]').value;
@@ -1290,15 +443,10 @@
     window.open(`https://wa.me/5491142495242?text=${encodeURIComponent(text)}`, '_blank');
   }
 
-  // Sticky nav color change on scroll
   window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
-    if (window.scrollY > 60) {
-      nav.style.boxShadow = '0 4px 30px rgba(123,31,58,0.12)';
-    } else {
-      nav.style.boxShadow = '0 2px 20px rgba(123,31,58,0.08)';
-    }
+    nav.style.boxShadow = window.scrollY > 60 ? '0 4px 30px rgba(123,31,58,0.12)' : '0 2px 20px rgba(123,31,58,0.08)';
   });
-</script>
+  </script>
 </body>
 </html>
